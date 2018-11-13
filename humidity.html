@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Visualization Dashboard(Latitude)</title>
+<!-- Linking Bootstrap stylesheet-->
+<!-- Latest compiled and minified CSS -->
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href = "styles.css">
+  <style>
+        body {background-color:rgb(226, 225, 225)}
+  </style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Lattitude</a>
+                  </div>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="maxtemp.html">Max Temperature</a></li>
+                          <li><a href="humidity.html">Humidity</a></li>
+                          <li><a href="cloudiness.html">Cloudiness</a></li>
+                          <li><a href="windspeed.html">Wind Speed</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="comparison.html">Comparison</a></li>
+                      <li><a href="data.html">Data</a></li>
+                    </ul>
+                  </div>
+                </div>
+        </nav>
+    <br>
+    <br>
+    <br>
+    <!-- Container 1 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-12">
+          <h1>Humidity</h1>
+          <hr>
+          <img src="Fig2.png" alt="City Latitude vs. Humidity" height="300" width="500" align="center"> 
+          <p>There is no direct relationship between latitude and levels of humidity.  Humidity varies across all latitudes.
+            The relative humidity changes when temperature changes. However, the scatterplot shows that most of the cities have humidity of 60% or higher.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <h2>Visualizations</h2>
+            <hr>
+                    <div class="col-md-6 col-sm-3">
+                        <figure>
+                            <a href="maxtemp.html">
+                                <img class = "boxx" id="landing_viz" src="Fig1.png" alt="City Latitude vs. Max Temperature" height="150" width="150" >
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6 col-sm-3">
+                        <figure>
+                            <a href="humidity.html">
+                                <img class = "boxx" id="landing_viz" src="Fig2.png" alt="City Latitude vs. Humidity" height="150" width="150" >
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6 col-sm-3">
+                        <figure>
+                            <a href="cloudiness.html">
+                               <img class = "boxx" id="landing_viz" src="Fig3.png" alt="City Latitude vs. Cloudiness" height="150" width="150" >
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="col-md-6 col-sm-3">
+                        <figure>
+                            <a href="windspeed.html">
+                                <img class = "boxx" id="landing_viz" src="Fig4.png" alt="City Latitude vs. Wind Speed" height="150" width="150" >
+                            </a>
+                        </figure>
+                    </div>
+    </div>
+  </div>
+</div>
+<div class="footer navbar-fixed-bottom">
+        
+    <div class="footer-top">
+        <p class="footer-text">&copy Copyright | Aparna Srikanti | 2018</p>
+    </div>
+  </div>
+ 
+  
+  </body>
+  </html>
